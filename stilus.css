@@ -1,0 +1,60 @@
+body {
+    background: beige;
+    margin: 0;
+
+    padding: 0;
+}
+main {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+#galeria .kartya {
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 3px;
+}
+.kartya img {
+    width: 100%;
+}
+#galeria .kartya h3,
+#galeria .kartya p {
+    display: none;
+}
+section {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-gap: 5px;
+}
+#fokep {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media screen and (max-width: 600px) {
+    main {
+        width: 100%;
+
+        padding: 5px;
+    }
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
