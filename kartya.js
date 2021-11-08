@@ -17,15 +17,22 @@ class Kartya {
         this.kepLeiras = this.tarolo.children("p");
         this.index = index;
         this.setAktKep(kepem);
-        this.tarolo.on("click", () => {
-            this.kattintasTrigger();
-        });
     }
     setAktKep(kepem) {
         this.aktKep = kepem;
         this.kepCim.text(this.aktKep.cim);
         this.kepLeiras.text(this.aktKep.leiras);
         this.kepImg.attr("src", this.aktKep.kep);
+    }
+}
+
+class KisKartya extends Kartya {
+    constructor(kepem, index, szuloelem) {
+        /*  szuloelem.append("<div>"); */
+        super(kepem, index, szuloelem);
+        this.tarolo.on("click", () => {
+            this.kattintasTrigger();
+        });
     }
 
     kattintasTrigger() {

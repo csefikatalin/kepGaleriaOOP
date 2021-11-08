@@ -27,7 +27,7 @@ $(function () {
     );
     /**Galéria képeinek generálása */
     galeriaTomb.forEach((elem, index) => {
-        const galeriaKep = new Kartya(elem, index, galeria);
+        const galeriaKep = new KisKartya(elem, index, galeria);
     });
 
     $(window).on("kepvaltas", (event) => {
