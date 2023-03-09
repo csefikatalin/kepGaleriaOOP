@@ -2,17 +2,17 @@ $(function () {
     const galeriaTomb = [
         {
             cim: "Szentkirályszabadja",
-            kep: "kepek/_DSC3977.jpeg",
+            kep: "kepek/DSC3977.jpeg",
             leiras: "Vasarelly stílusban",
         },
         {
             cim: "Tisza melletti kerékpárút",
-            kep: "kepek/_DSC5109.jpeg",
+            kep: "kepek/DSC5109.jpeg",
             leiras: "Tisza melletti kerékpárút esőben",
         },
         {
             cim: "Kis tó szobnál",
-            kep: "kepek/_DSC5826.jpeg",
+            kep: "kepek/DSC5826.jpeg",
             leiras: "Tükröződés",
         },
     ];
